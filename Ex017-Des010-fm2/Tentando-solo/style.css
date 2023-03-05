@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'droid';
+    src: url('fontes/idroid.otf') 
+   format('opentype'); 
+}
+
+/*
+        -Tabelas de cores-
+    1- #063D1E (Verde mais escuro)
+    2- #2FAB66 (Verde menos escuro que o anterior)
+    3- #3DDC84 (~)
+    4- #83E1AD (~)
+    5- #C5EBD6 (~)
+*/
+html, body {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    width:  100%;
+}
+
+body {
+    background-color: #8dfabb;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   
+    
+}
+
+/*    Início               */
+
+header {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom , #44ff00, #038b3c, #013c1b);
+    text-align: center;
+    width: 100%;
+    padding: 8px 220px 3px 0px;
+    background-position: top center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header > h1#txt-topo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 3px 5px black;
+    color: #fdfbfb;
+    font-size: 50px;
+}
+
+header > p#txt-topo-mini {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ebfcf2da;
+    padding: 1em;
+}
+
+nav {
+    padding-left: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+nav > a.cabecalho-acesse {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: double;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+a.cabecalho-acesse:hover {
+    color: rgb(148, 255, 127);
+    text-decoration: underline;
+}
+
+#link-top-home {
+    color: #89eab5;
+    text-decoration: underline;
+}
+
+a#link-top-home:hover {
+    color: rgb(0, 255, 115);
+    text-decoration: underline;
+}
+
+/*    Desenvolvimento             */
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-color: #fdfbfb;
+    box-shadow: 5px 5px 5px rgba(3, 29, 64, 0.674);
+    width: min-content;
+    border-radius: 3px;
+    padding: 10px;
+    margin: auto;    
+    color: rgb(14, 14, 14);
+}
+
+h1#title-mascote {
+    font-family: 'droid', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #013c1b;
+    font-size: 30px;
+    margin: 0;
+    padding: 5px;
+}
+
+h2.title-desenvolvimento {
+    font-family: 'droid', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient( to right, rgb(211, 255, 211), rgba(191, 248, 191, 0.656) 50%, rgba(193, 255, 193, 0.099));
+    font-size: 25px;
+    color: #013c1b;
+    padding: 5px;
+    
+}
+
+p.txt-pgfo {
+    align-content: center;
+    width: fit-content;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 40px;
+    font-weight: 500;
+    color: rgb(14, 14, 14);
+}
+
+.link-desenvolvimento {
+    color: #4cb578;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-desenvolvimento:hover {
+    color: #347a51;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.androidimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.video-exemplo {
+    background-color: #013c1b;
+}
+
+section div.video-android {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+section.card-green {
+    background-color: #bbfcd6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 40px;
+    color: rgb(14, 14, 14);
+}
+
+div.card-greentop {
+    background-color: #4cb578;
+    color: #fdfbfb;
+    display: block;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    border-radius: 40px 40px 2px 2px;
+}
+
+div h5.txt-card-title {
+    margin-block-start: 5px;
+    margin-block-end: 0px;
+    margin-inline-start: 15px;
+}
+
+article.content-extra {
+    padding: 0px 10px 10px 10px;
+}
+
+ul.txt-versoes-parte1 {
+    display: inline-block;
+    list-style-position: inside;
+}
+
+ul.txt-versoes-parte2 {
+    display: inline-block;
+    list-style-position: inside;
+}
+
+/*    Rodapé             */
+
+footer {
+    background-color: #013c1b;
+    margin: 5px 0px 0px 0px;
+}
+
+p.txt-end {
+    text-align: center;
+    color: #4cb578;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+
+}
+
+a.link-end {
+    color: #6afba7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a.link-end:hover {
+    color: rgb(255, 255, 255);
+}
+

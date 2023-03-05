@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+
+<style>
+
+    /*top = Cima
+      right = Direita
+      bottom = Baixo
+      left = Esquerda*/
+
+    * {
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+        background-image: linear-gradient( to right, rgb(0, 0, 95), rgb(0, 82, 47));
+        
+        }
+
+    main {
+        background-color: bisque;
+        box-shadow: 5px 5px 5px rgba(3, 29, 64, 0.674);
+        border: 2px;
+        border-style: groove;
+        border-color: black;
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        height: 1000px;
+        width: 500px;
+        margin: auto;
+    }
+
+    
+
+    h1#brincando {
+      width: 300px;  
+      height: 100px;
+      background-color: rgb(173, 255, 165);
+
+      /*border-width: 10px;
+      border-style: solid;
+      border-color: rgb(137, 141, 255);*/
+      border: 10px solid rgb(137, 141, 255);
+
+      padding: 10px;
+
+      /*outline-width: 30px;
+      outline-style: groove;
+      outline-color: rgb(183, 74, 255);*/
+      outline: 30px groove rgb(183, 74, 255);
+      margin: 70px;
+    
+    }
+
+    p {
+       /*border-width: 2px;
+        border-style: dotted;
+        */
+        border: 2px dotted black;
+        border-radius: 5px; 
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(59, 59, 252);
+    }
+</style>
+
+</head>
+<body>
+    <main>
+    <h1 id="brincando">Modelos de caixas</h1>
+    <br>
+    <h2>Exemplos de box-level</h2>
+    <p> Tags como o <code>&lt;h1&gt;</code> sao exemplos de box-level, mas as <a href="#">os links sao exemplos de inline-level.</a></p>
+    </main>
+</body>
+</html>

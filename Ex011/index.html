@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <link rel="shortcut icon" href="../Ex002.Prática002/Icones/faviconeEx002.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="Photos/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Photos/img-m.png" type="image/png">
+        <img src="Photos/img-g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+<picture>
+        <source media="(min-width: 1050px)" srcset="Photos/img-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="Photos/img-m.png" type="image/png">    
+        <img src="Photos/img-p.png" alt="Imagem flexível">
+</picture>
+
+</body>
+</html>

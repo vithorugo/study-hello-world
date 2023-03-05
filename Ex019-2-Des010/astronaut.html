@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="design/alien.png" type="image/x-icon">
+    <title>Ao infinito e além...</title>
+    <style>
+        body {
+          position: relative;
+          margin: 0;
+          height: 97vh;
+
+          background-color: black;
+          background-image: url('design/espaco.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+
+        div#astronaut {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+
+          transform: translate(-50%, -50%);
+        }
+
+        div#astronaut:hover {
+          position: absolute;
+          left: 40%;
+          top: 60%;
+
+          transform: translate(-50%, -50%);
+          transition: 0.9s;
+        }
+    </style>
+</head>
+<body>
+    <div id="astronaut">
+        <img src="design/astronauta.png" alt="astronauta">
+    </div>
+</body>
+</html>

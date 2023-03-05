@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }   
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(251, 173, 121);
+        }
+
+        caption {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: brown;
+            color: antiquewhite;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        thead, tfoot {
+            background-color: rgb(251, 173, 121);
+            color: black;
+        }
+
+        tbody {
+            background-color: antiquewhite;
+            color: rgb(25, 25, 25);
+        }
+
+        tbody > tr:nth-child(odd) { /*Xn = a cada x linha e/ou odd = impar e/ou even = par*/
+            background-color: rgb(255, 207, 144);
+        }
+
+        .sigla {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- Anatomia para  Tabelas  Grandes  -->
+    <!--
+        Table
+         Caption (legenda do top)
+            THead
+                TR, TD, TH
+            TBody
+                TR, TD, TH
+            TFoot
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Estados e suas siglas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Sigla</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td class="sigla">AC</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="sigla">AL</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="sigla">AP</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="sigla">AM</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="sigla">BA</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="sigla">CE</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="sigla">DF</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="sigla">ES</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="sigla">GO</td>
+            </tr>
+            <tr>
+                <td>Maranhao</td>
+                <td class="sigla">MA</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="sigla">MT</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="sigla">MS</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="sigla">MG</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="sigla">PR</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="sigla">PB</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="sigla">PR</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="sigla">PE</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="sigla">PI</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="sigla">RJ</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="sigla">RN</td>
+            </tr>
+            <tr>
+                <td>Rio Gande do Sul</td>
+                <td class="sigla">RS</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="sigla">RO</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="sigla">RR</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="sigla">SC</td>
+            </tr>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="sigla">SP</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="sigla">SE</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="sigla">TO</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">test</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

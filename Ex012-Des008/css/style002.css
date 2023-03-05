@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: #6B7FD7;
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #E0DFD5;
+}
+
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+.laranja {
+    color: #F09D51;
+}
+
+.principal {
+    color: #0B0033;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: chocolate;
+            text-align: justify;
+            margin: 0;
+        }
+
+
+        header {
+            background-color: rgb(81, 28, 1);
+            color: rgb(241, 201, 149);
+            border-radius: 0px 0px 0px 5px;
+            padding: 10px 0px 0px 0px;
+            margin: 0px;
+        }
+
+        
+
+        header > h1 {
+            text-align: center;
+            text-shadow:
+             5px 2px 4px rgba(0, 0, 0, 0.596);
+            
+        }
+
+        nav {
+            background-color: rgb(46, 2, 2);
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 0px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        a {
+            color: rgb(241, 201, 149);
+            text-decoration: none;
+            padding-right: 5px;
+        }
+
+        nav > a:hover {
+            color: tomato;
+            text-decoration: line-through;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.356);
+            border-radius: 5px;
+            border: 2px solid rgb(103, 35, 1);
+            padding: 5px 10px 5px 10px;
+            margin: 10px;
+        }
+
+        section {
+            text-align: justify;
+        }
+
+        #Notas > h2 {
+            text-align: center;
+        }
+
+        article > aside {
+            background-color: rgba(239, 188, 123, 0.164);
+        }
+        
+
+        footer {
+            background-color: rgb(49, 20, 0);
+            color: rgb(241, 201, 149);
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        footer > p:hover {
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link01</a>
+        <a href="#">Link02</a>
+        <a href="#">Link03</a>
+        <a href="#">Link04</a>
+    </nav>
+    
+    </header>
+    <main>
+        <section id="Notas">
+            <h2>Bem-vindos</h2>
+            <p>Olá Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ipsum numquam omnis totam quae facere dolor, fuga, dicta, doloremque maxime at amet! Dolore iure sed quas itaque voluptatum tempore quisquam?</p>
+        </section>
+        <section id="assunto">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio consequatur eaque tempore laudantium cum et officiis ut quae facere, repellendus, dolor nulla, vero rerum neque eius illum modi enim temporibus.</p>
+                <aside><p>Escrito por: tal.</p></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+       <p><code>Desenvolvido por: vithorugo.</code></p>
+    </footer>
+</body>
+</html>

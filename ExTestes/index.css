@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(91, 93, 121);
+    color: beige;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    border: 5px solid rgb(16, 170, 16);
+
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+section.glass-effect {
+    width:  1150px;
+    height: 250px;
+    padding: 10px;
+    margin:auto 100px; 
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0)); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
+    border: 1px solid rgba(255, 255 , 255, 0.18); 
+    border-radius: 32px;
+}
+
+section.glass-effect:hover {
+    background-color: rgb(73, 75, 104);
+    color: rgb(252, 252, 158);
+}

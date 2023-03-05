@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens e aúdios</title>
+</head>
+<body>
+    <h1>Testando diferentes tamanho de imagens para adaptacao em diferentes dispositivos</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/dragon-img-300x300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Imagens/dragon-img-700x700.jpg" type="image/jpg">
+        <source media="(max-width: 1100px)" srcset="Imagens/dragon-img-1000x1080.jpg" type="image/jpg">
+        <img src="Imagens/dragon-1920x1080.jpg" alt="Imagem muito grande">
+    </picture>
+
+    <h1>Música do dragao</h1>
+    <audio src="midia/TheWorld'sFair-Godmode.mp3" controls autoplay loop>
+    <p> O seu navegador não suporta o elemento <code>audio</code>.</p></audio>
+
+    <h2>Exemplo melhor de código</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/TheWorld'sFair-Godmode.mp3" type="audio/mpeg">
+        <source src="midia/TheWorld'sFair-Godmode.ogg" type="audio/ogg">
+        <source src="midia/TheWorld'sFair-Godmode.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não carrega o <code>aúdio</code>. Clique <a href="midia/TheWorld'sFair-Godmode.mp3">aqui</a> para baixar o arquivo mp3</p>
+    </audio>
+
+<!-- Reprodução simples de áudio -->
+<audio src="midia/TheWorld'sFair-Godmode.mp3" controls autoplay>
+    O seu navegador não suporta o elemento <code>audio</code>.
+  </audio>
+  
+  <!-- Reprodução de áudio com legendas -->
+  <audio src="midia/TheWorld'sFair-Godmode.mp3" controls autoplay>
+    
+    <track kind="captions" src="midia/TheWorld'sFair-Godmode.mp3" srclang="sv" label="Svenska">
+  </audio>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td {
+            font-weight: bold;
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        tr.linha {
+            background-color: tomato;
+        }
+
+        td.dado {
+            background-color: chocolate;
+        }
+
+        th {
+            border: 3px solid black;
+        }
+
+        th.title {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela HTML</h1>
+
+    <!-- 
+        Hierarquia de tabelas (Simples)
+
+        - table == Tabela
+        - table row (tr) == Linha de tabela
+        - table Header (th) == Cabecalho de tabela
+        - table data (td) == dado de tabela
+        -
+    -->
+
+    <table>
+        <tr> <!-- First line -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- Two line -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha"> <!-- Three line -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!-- Four line -->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <th>List name hero</th>
+        <tr>
+            <td class="dado">Spider-Man</td>
+            <td class="dado">Iron Man</td>
+            <td class="dado">Tempest</td>
+        </tr>
+        <th>List</th>
+        <tr class="linha">
+            <td>Draw</td>
+            <td>Skechbook</td>
+            <td>Pencíl</td>
+            <td>Markup</td>
+        </tr>
+        <th class="title">Tecnologias</th>
+        <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+        </tr>
+    </table>
+</body>
+</html>
