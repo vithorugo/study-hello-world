@@ -1,8 +1,8 @@
 # vithorugo.github.io
-<link rel="shortcut icon" href="../Design/earth-svgrepo-com.svg" type="image/x-icon">
-<img src="../Design/iconcartoonvitor.svg" alt="Primeiro mascote da android">
+<img src="../Design/iconcartoonvitor.svg" alt="Eu versao cartoon">
 <h1>Olá, sou o Vitor Hugo</h1>
 
+<h2>Aqui você vai ver...</h2>
 - Códigos dos meus estudos (HTML e as CSS).
 
 - Até o momento estou acompanhando as aulas do @Cursoemvideo para meu aprendizado.
