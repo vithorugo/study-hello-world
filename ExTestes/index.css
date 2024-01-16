@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgb(91, 93, 121);
+    background-color: rgb(187, 189, 216);
     color: beige;
 }
 
@@ -25,13 +25,13 @@ section.glass-effect {
     height: 250px;
     padding: 10px;
     margin:auto 100px; 
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0)); 
+    background: linear-gradient(135deg, rgba(167, 121, 121, 0.1), rgba(255, 255, 255, 0)); 
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
     border: 1px solid rgba(255, 255 , 255, 0.18); 
     border-radius: 32px;
 }
 
 section.glass-effect:hover {
-    background-color: rgb(73, 75, 104);
+    background-color: rgba(255, 221, 221, 0.057);
     color: rgb(252, 252, 158);
 }
