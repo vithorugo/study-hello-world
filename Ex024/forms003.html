@@ -9,12 +9,32 @@
     <h1>Test de formulário</h1>
     <form action="cadastro.php" method="get">
        <p>
-        <label for="inome">Nome: </label>
-        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
        </p>
         <p>
-        <label for="imedia">Média: </label>
-        <input type="number" name="media" id="imedia">
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" required placeholder="Nota Final" step="0.3" value="5.5">
+        </p>
+        <p>
+            <label for="imes">Período Letivo: </label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idia">Data: </label>
+            <input type="date" name="data" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora: </label>
+            <input type="time" name="Hora" id="ihora">
+        </p>
+        <p>
+            <label for="icor">Cor da prova: </label>
+            <input type="color" name="Color" id="icor">>
+        </p>
+        <p>
+            <label for="ilike">Gostou? </label>
+            <input type="checkbox" name="Like" id="ilike">
         </p>
         <p>
             <input type="submit" value="Enviar">
