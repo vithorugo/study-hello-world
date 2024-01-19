@@ -1,5 +1,4 @@
 # vithorugo.github.io
-<img src="../Design/iconcartoonvitor.svg" alt="Eu versao cartoon">
 <h1>Olá, sou o Vitor Hugo</h1>
 
 <h2>Aqui você vai ver...</h2>
