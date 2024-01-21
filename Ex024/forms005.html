@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio - Formulários HTML</title>
+</head>
+<body>
+    <h1>Forms com Checkbox e Radio</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Perfil</legend>
+            <label for="ifoto">Insira sua foto de perfil: </label>
+            <input type="file" name="fotoperfil" id="ifoto">
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" checked value="M"><label for="imasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="espin" id="iespin" checked> <label for="iespin">Ping-Pong</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Gostou?</legend>
+            <label for="isas">Nível de satisfação</label>
+            <input type="range" name="nivelsatisfacao" id="isas" min="1" max="20" value="20">
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
