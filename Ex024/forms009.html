@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS e HTML</title>
+</head>
+<body>
+    <h1>Mais itens para forms</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Idade</legend>
+            <div>
+                <label id="iano">Nascimento(yy):</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2040" oninput="CalcIdade()">
+            </div>
+            <br>
+            <div>
+                <label id="iidade">Sua idade é: </label>
+                <output>0</output>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function CalcIdade() {
+            let atual = new Date().getFullYear();
+            document.getElementById("iidade").innerHTML = atual - Number(iano.value);
+        }
+    </script>
+    
+</body>
+</html>
