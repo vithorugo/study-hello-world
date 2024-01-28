@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+/* Small devices such as large phones (640px and up) */
+/* @media only screen and (min-width: 40em) {...} */
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 48em) {...} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 64em) {...}
+
+ Largest devices such as desktops (1280px and up) 
+/* @media only screen and (min-width: 80em) {...} */
+
+/* Demais dispositivos 
+---------------------------- */
+/* Estilos para telas pequenas (telefones) */
+@media only screen and (max-width: 600px) {
+
+    img#phone { display: block;}
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+
+    body {
+        background-image: url(../imagens/back-phone.jpg);
+    }
+  }
+  
+  /* Estilos para telas médias (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+        img#phone { display: none;}
+        img#tablet { display: block; }
+        img#print { display: none; }
+        img#pc { display: none; }
+        img#tv { display: none; }
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+  }
+  
+  /* Estilos para telas grandes (desktops) */
+  @media only screen and (min-width: 1025px) {
+    img#phone { display: none;}
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: block; }
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+  }
+  
+  @media print {
+
+        img#phone { display: none;}
+        img#tablet { display: none; }
+        img#print { display: block; }
+        img#pc { display: none; }
+        img#tv { display: none; }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);  /*Desnecessário*/
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através de tal site';
+        text-decoration: overline;
+    }
+  }
