@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone and email</title>
+</head>
+<!-- (Ctrl) + (+) + (;) atalho de comment -->
+<body>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+        <legend>Login</legend>
+            <p>
+                <label for="iemail">E-mail: </label>
+                <input type="email" name="E-mail" id="iemail" maxlength="30" required >
+            </p>
+            <p>
+                <label for="itel">Telephone: </label>
+                <input type="tel" name="Telephone" id="itel" required pattern="^\(\d{2}\)\d[0-9]{4}-\d[0-9]{4}$" placeholder="(00) 9999-" autocomplete="tel">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <!---Estudar mais RegEx---->
+</body>
+</html>

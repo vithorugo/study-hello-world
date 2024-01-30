@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+html {
+    overflow: visible;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: rgb(92, 179, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 123, 123);
+    border-radius: 6px; 
+  }
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(92, 179, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+h1, h2 {
+    color: rgb(255, 244, 230);
+    text-shadow: 2px 2px 2px #0f0f0f;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(253, 191, 115);
+    border-radius: 10px;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Menu */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+  #burguer {
+    background-color: rgb(0, 123, 123);
+    color: rgb(255, 244, 230);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #burguer:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 55, 55);
+  }
+
+menu {
+    display: none;
+    padding: 10px;
+}
+
+menu > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(249, 147, 14);
+    color: rgb(255, 244, 230);
+    border-radius: 35px;
+    border: 1px solid rgb(253, 191, 115);
+}
+
+menu > ul > li > a:hover {
+    background-color: rgb(0, 123, 123);
+}
+
+main {
+    width: 90vw;
+    background-color: rgba(0, 123, 123, 0.603);
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
